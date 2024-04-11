@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="uf-8">
+        <title>Building HTML Forms Practice</title>
+    </head>
 
+    <body>
+         <form action="/building-HTML-forms" method="post">
+            <fieldset>
+              <legend>Add User</legend>
+
+              <div>
+                <label for="firstName">First name</label>
+                <input id="firstName" type="text" name="First_name">
+              </div>
+
+              <div>
+                <label for="lastName">Last name</label>
+                <input id="lastName" type="text" name="Last_name">
+              </div>
+
+              <div>
+                <label for="email">Your best email</label>
+                <input id="email" type="email" name="Email_address">
+              </div>
+
+              <div>
+                <label for="status">Choose your role</label>
+                <select id="status" name="user_status">
+                    <option value="student">Student</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="guest">Guest</option>
+                </select>
+              </div>
+
+              <fieldset>
+                <legend>Choose your favorite programming language</legend>
+
+                 <div>
+                    <input type="radio" id="html" name="HTML">
+                    <label for="html">HTML</label>
+                 </div>
+
+                 <div>
+                    <input type="radio" id="css" name="CSS">
+                    <label for="cass">CSS</label>
+                 </div>
+
+                 <div>
+                    <input type="radio" id="javascript" name="Javascript">
+                    <label for="javascript">Javascript</label>
+                 </div>
+              </fieldset>
+
+              <div>
+                <label for="comments">Leave your comments</label><br>
+                <textarea id="comments" name="Comments"></textarea>
+              </div>
+
+              <div>
+                <label for="date">Current date</label><br>
+                <input type="date" id="date" name="Date">
+              </div>
+
+              <fieldset>
+                <legend>Recommended</legend>
+
+                <div>
+                    <input type="checkbox"id="singUp" name="sign_up">
+                    <label for="signup">Sign up for newsletter</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="agreement" name="agree_terms_&_conditions">
+                  <label for="agreement">Agree to terms and conditions</label>
+                </div>
+              </fieldset>
+
+              <div>
+                 <button type="submit">Submit</button>
+              </div>
+
+            </fieldset>
+         </form>
+    </body>
+</html>
